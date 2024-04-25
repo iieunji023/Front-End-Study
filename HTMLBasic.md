@@ -745,10 +745,10 @@
           <option> 태그에 selected 속성을 사용함녀 맨앞에 노출된다.
         -->
 
-    <summary>결과</summary>
+  <summary>결과</summary>
 
-    ![select](/img/select.png)
-    </details>
+  ![select](/img/select.png)
+  </details>
 
 ## ```<div>```
 * ```<div>```태그는 공간을 **블록형식으로 분할**한다.
@@ -821,7 +821,7 @@
   </details>
 
 ## [시맨틱(semantic) 태그](https://velog.io/@syoung125/%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8-Semantic-Tag-%EC%9E%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
-![semantic](/img/semantic.png)
+<img src="/img/semantic.png" width="50%" height="50%"></img>
 ```
   <header>: 머리말
   <nav>: 웹페이지 메뉴
