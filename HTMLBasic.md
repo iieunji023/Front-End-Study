@@ -53,6 +53,8 @@
 
   ![공백](/img/공백.png)
 
+<hr>
+
 ### ```&nbsp;```
 * ```&nbsp;```를 적은만큼 띄워쓰기가 됨
 
@@ -316,7 +318,7 @@
   </details>
 
 ## ```<table> - <tr>, <th>, <td>```
-> 태그
+> **태그**
 * tr (table row) : 행
 * td (table data) : 행의 내용
 * th (table heading) : 행, 열의 제목
@@ -326,7 +328,7 @@
 * tfoot : 꼬리말
 * tbody : 본문
 
-> 속성
+> **속성**
 * [rowspan/colspan](https://m.blog.naver.com/gounsori90/220531860547) : 가로와 세로 셀을 병합할 수 있음
 
   <details>
@@ -470,7 +472,7 @@
   </details>
 
 ## ```<img>```
-> href와 src의 차이
+> **href와 src의 차이**
 * href : <a> 태그에 홈페이지 등의 주소를 입힐때 사용 / 사용자의 클릭이 있을 때 이동
 * src : <img> 태그에 파일 디렉토리 경로에 있는 어떠한 이미지를 지성하여 웹 페이지에 결과물을 출력할때 사용 / 사용자의 클릭없이 자동으로 출력
 
