@@ -606,7 +606,8 @@
 * 서버에서 name 명으로 꺼낸 값에는 value 에 해당하는 값이 들어있다.
 
 > **동적인 페이지**
-![dy](/img/dy.png)
+
+* ![dy](/img/dy.png)
 * ```입력 <input type="text" name="input">```
 * 홍길동이라고 입력을 하면 서버로 보내짐
 * 클라이언트에서 데이터를 입력하면 서버에서 데이터를 받아서 처리한 후 클라이언트에게 다시 보내줌
@@ -616,7 +617,6 @@
   <details>
       <summary>예제_radio</summary>
 
-      ```
           <!-- 사용자가 입력하는 입력 양식 -->
           ID <input type="text" name="id"><br><br>
           PW <input type="password" name="pw"><br><br>
@@ -629,7 +629,6 @@
           <input type="button" value="button"><br><br>
           <input type="reset" value="reset"><br><br>
           <input type="submit" value="제출">
-      ```
 
       <summary>결과</summary>
 
