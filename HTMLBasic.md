@@ -634,3 +634,259 @@
 
     ![dy](/img/dy1.png)
     </details>
+
+## ```<form>```
+> **개념**
+* ```<form>``` 요소는 사용자로부터 정보・데이터와 같은 인풋(input)을 받아 제출하기 위한 대화형 컨트롤을 포함하는 문서 구획을 나타낸다.
+
+> **속성**
+```<form action="API 주소" method="GET|POST"></form>```
+* action
+  * 양식 데이터를 처리할 서버의 주소값을 가진다.
+  * 즉, 입력받은 정보나 데이터를 서버에 보내 처리하는 기능을 한다. 
+* method
+  * 양식의 정보 전달 방식을 결정한다.
+  * GET 방식과 POST 방식..
+  * [GET/POST 방식 정리](https://www.notion.so/GET-POST-ca09c70c0f0b4e15a1417f7f26733c94?pvs=4)
+> **양식 라벨 태그: ```<label>```**
+```
+<label for="user-name">이름</label>
+<input id="user-name" />
+
+<label for="user-email">이메일</label>
+<input id="user-email" />
+```
+
+* ```<label>``` 태그는 폼 양식에 이름을 붙이는 태그이다.
+* ```<label>``` 태그는 **'for' 속성(attribute)을 통해 특정 ```<input>``` 필드의 'id'값과 연결**시킨다. 
+
+  <details>
+      <summary>코드</summary>
+
+        <html>
+          <head>
+            <title>form label</title>
+          </head>
+          <body>
+            <form>
+              <label for="name">user</label>
+              <input type="text" id="name"><br><br>
+              <label for="tel">tel</label>
+              <input type="tel" id="tel" placeholder="전화번호를 입력하세요"><br><br>
+              <hr><br>
+              email <input type="email"><br><br>
+              color <input type="color"><br><br>
+              date <input type="date"><br><br>
+              search <input type="search">
+            </form>
+          </body>
+        </html>
+
+        <!-- 
+          입력양식은 <form> 태그로 먼저 영역을 설정하고 내부에 <input> 태그를 만든다.
+          <form> 태그가 없으면 전송이 되지 않는다.
+          <label> 태그의  for 속성은 레이블을 클릭하면 입력창으로 이동
+                          placeholder 속성은 힌트를 보여준다.
+        -->
+
+    <summary>결과</summary>
+
+    ![label](/img/label.png)
+    </details>
+
+## ```<fieldset>```
+* ```<fieldset>``` 태그는 ```<form>``` 요소에서 연관된 요소들을 하나의 그룹으로 묶을 때 사용한다.
+* ```<fieldset>``` 요소는 하나의 그룹으로 묶은 요소들 주변으로 박스 모양의 선을 그려준다.
+* 또한, ```<legend>``` 요소를 사용하면 ```<fieldset>``` 요소의 캡션(caption)을 정의할 수 있다.
+
+  <details>
+      <summary>코드</summary>
+
+        <form>
+          <fieldset>
+            <legend>개인정보입력</legend>
+            이름: <input type="text" name="name"><br>
+            나이: <input type="text" name="age"><br><br>
+            <input type="submit">
+          </fieldset>
+        </form>
+
+    <summary>결과</summary>
+
+    ![fieldset](/img/fieldset.png)
+    </details>
+
+## ```<select>```
+
+<details>
+      <summary>코드</summary>
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+        </head>
+        <body>
+          <form>
+            <select multiple = "multiple">
+              <option>김밥</option>
+              <option selected>떡볶이</option>
+              <option>순대</option>
+              <option>오뎅</option>
+            </select>
+          </form>
+        </body>
+        </html>
+
+        <!-- 
+          <select> 태그 안에 <option> 태그를 사용하여 여러개를 나열한다.
+          <option> 태그에 selected 속성을 사용함녀 맨앞에 노출된다.
+        -->
+
+    <summary>결과</summary>
+
+    ![select](/img/select.png)
+    </details>
+
+## ```<div>```
+* ```<div>```태그는 공간을 **블록형식으로 분할**한다.
+* 항상 새라인에서 시작한다.
+* 양 옆에 다른 콘텐트를 배치하지 않고 한 라인 전체를 사용한다.
+* ```<h1> / <p> / <ul> / <div>```이 있음
+
+## ```<span>```
+* ```<span>```태그는 공간을 인라인형식으로 분할한다.
+* 자신의 글자 크기만큼 영역을 차지하면서 왼쪽에서 오른쪽으로 출력된다.
+* 실제 데이터의 크기만큼만 한라인의 일부만 사용한다
+* ```<b> / <a> / <img> / <span>```이 있음
+
+### [태그 성질에 따른 분류](https://memostack.tistory.com/275)
+1. 블록요소 태그
+    * html, body, div, p, ul, ol, li, dl, dt, dd …
+    * 기본 가로 공간의 크기가 부모태그와 동일하게 인식
+    * 연속해서 작성하면 세로 배열
+    * 공간값이 적용(w, h)
+2. 인라인 요소 태그
+    * a, span, strong, i, em …
+    * 기본 가로 공간의 크기가 안쪽에 포함된 내용만큼만 인식
+    * 연속해서 작성하면 가로 배열
+    * 공간값이 적용 안됨
+3. 인라인 블록요소 태그
+    * img, input, button …
+    * 기본 가로 공간의 크기가 안쪽에 포함된 내용만큼 인식
+    * 연속해서 작성하면 가로배열
+    * 공간값이 적용
+
+### [id와 class의 차이](https://ohknow.tistory.com/35#google_vignette)
+* id : '유일'한 요소에 스타일을 적용
+* class : '복수'의 요소에 스타일을 적용
+
+<details>
+    <summary>코드</summary>
+
+      <html>
+        <head>
+          <title>space_relation</title>
+        </head>
+        <body>
+          <div id="wrap">
+            <div class="box1">
+              <div class="n1">첫번째</div>
+              <div class="n2">두번째</div>
+            </div>
+            <div>
+              <h1>제목</h1>
+              <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </ul>
+            </div>
+          </div>
+        </body>
+      </html>
+
+      <!-- 
+        class는 중복이 가능하다. 그러나 id는 중복이 안된다.
+        wrap의 자식은 box1, box2이면 box1의 자식은 n1, n2이고 
+        이 둘의 관계는 형제이다.
+      -->
+
+  <summary>결과</summary>
+
+  ![id](/img/idclass.png)
+  </details>
+
+## [시맨틱(semantic) 태그](https://velog.io/@syoung125/%EC%8B%9C%EB%A7%A8%ED%8B%B1-%ED%83%9C%EA%B7%B8-Semantic-Tag-%EC%9E%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+![semantic](/img/semantic.png)
+```
+  <header>: 머리말
+  <nav>: 웹페이지 메뉴
+  <section>: 제목별로 나누는 컨텐츠 영역
+  <article>: 개별 콘텐츠를 나누는 영역
+  <footer>: 사이트의 마지막(저자, 저작권 정보, 간단한 맺음말)
+```
+
+<details>
+    <summary>코드</summary>
+
+      <html>
+        <head>
+          <title>semanticless</title>
+        </head>
+        <body>
+          <header>
+            <div>
+              <h1>HTML5 기본</h1>
+            </div>
+          </header>
+
+          <nav>
+            <ul>
+              <li><a href="#">메뉴-1</a></li>
+              <li><a href="#">메뉴-2</a></li>
+              <li><a href="#">메뉴-3</a></li>
+            </ul>
+          </nav>
+
+          <section>
+            <article>
+              <h1>What is Lorem Ipsum?</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+              when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+              It has survived not only five centuries, but also the leap into electronic typesetting, 
+              remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+              and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </article>
+            <article>
+            <h1>What is Lorem Ipsum?</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </article>
+          <section>
+          <footer>
+            <span>부산광역시 용호동 부경대학교</span>
+          </footer>
+        </body>
+      </html>
+
+      <!-- 
+        <header>: 머리말
+        <nav>: 웹페이지 메뉴
+        <section>: 제목별로 나누는 컨텐츠 영역
+        <article>: 개별 콘텐츠를 나누는 영역
+        <footer>: 사이트의 마지막(저자, 저작권 정보, 간단한 맺음말)
+      -->
+
+  <summary>결과</summary>
+
+  ![semantic](/img/sem.png)
+  </details>
