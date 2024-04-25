@@ -53,6 +53,7 @@
       -->
       ```
 
-      * item, header 클래스명을 2개로 인식함
+      
   </details>
-
+  
+* item, header 클래스명을 2개로 인식함
