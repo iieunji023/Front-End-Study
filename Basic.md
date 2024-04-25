@@ -31,7 +31,7 @@
     </details>
 
 
-    ![text size](C:/work/img/github/textsize.png)
+    ![text size](/img/textsize.png)
 
 ## ```&nbsp;```
 ### 공백
@@ -51,7 +51,7 @@
         </html>
   </details>
 
-  ![공백](C:/work/img/github/공백.png)
+  ![공백](/img/공백.png)
 
 ### ```&nbsp;```
 * ```&nbsp;```를 적은만큼 띄워쓰기가 됨
@@ -70,7 +70,7 @@
         </html>
   </details>
 
-  ![nbsp](C:/work/img/github/nbsp.png)
+  ![nbsp](/img/nbsp.png)
 
 
 ## ```<p>, <br>```
