@@ -539,11 +539,13 @@
     ```
     * 0~9까지 6글자만 허용
 
+
+
       <summary>결과</summary>
 
     ![pattern](/img/pattern1.png)
     * 올바르게 입력시 제출됨
-    
+
     ![pattern](/img/pattern2.png)
     * 글자 수 초과시 오류발생
 
@@ -587,8 +589,9 @@
 
   </details>
 
-```
-[<input>태그 id와 name의 차이](https://velog.io/@dongeranguk/input-%ED%83%9C%EA%B7%B8-id%EC%99%80-name%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+
+### ```<input>```태그 정리
+> [```<input>```태그 id와 name의 차이](https://velog.io/@dongeranguk/input-%ED%83%9C%EA%B7%B8-id%EC%99%80-name%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 * id
   * page 안에서 **중복으로 사용할 수 없으며, 주로 JavaScript에서 다루기 위해** 지정한다.
   * id 속성으로 설장된 값은 @RequestMapping에 지정한 Server단(클래스 or 메소드)의 파라미터로 넘어가지 않기 때문에 **Server단에서 접근이 불가능**하다.
@@ -596,21 +599,9 @@
   * page 영역에서 **중복되어 사용이 가능**하며, **action에 해당하는 페이지에 전달할 수 있는 파라미터로 사용**한다.
   * 태그의 **name 값이 키(Key)**로 해서 값(Value)가 전송된다.
   * 즉, request에 값이 전달될 때 Map과 마찬가지로 **Key와 Value 쌍의 형식으로 데이터가 저장**된다.
-```
 
-```
-[<input> 태그 name과 value의 차이]
+> ```<input>``` 태그 name과 value의 차이
 * name은 태그명, 폼 서브밋시 서버에서 name 명으로 값을 가져올 수 있다.
 * value 는 해당 태그의 값
 * 서버에서 name 명으로 꺼낸 값에는 value 에 해당하는 값이 들어있다.
-
-Form 태그 자식들 즉 <form> <input .... > </form> 
-안에 ```<input>```을 어딘가 다른 페이지로 전달할때
-name은 전달받는 페이지 입장에서 값을 꺼낼 수 있는 키이다.
-
-우편물에 비유하자면 다른 페이지를 아파트라고 한다면
-```<input>```태그에 name은 해당 호수라 볼 수 있고, value는 내용물
-name = “202호” value=”소포”
-받는 아파트에서 name (몇호인지 안써있다면) 이 없다면 해당 우편물을 꺼낼 수 없다.
-```
 
