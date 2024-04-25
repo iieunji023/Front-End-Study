@@ -509,7 +509,7 @@
 * <input> 태그는 사용자로부터 입력을 받을 수 있는 입력 필드(input filed)를 정의할 때 사용
 * <input> 요소는 사용자가 데이터를 입력할 수 있는 입력 필드를 선언하기 위해 <form> 요소 내부에서 사용
   * 이러한 입력 필드는 <input> 요소의 type 속성값을 달리함으로써 여러 가지 모양으로 나타낼 수 있다.
-> [<input> 유형] (https://sorto.me/docs/Web/HTML/Element/input)
+> [```<input>``` 유형] (https://sorto.me/docs/Web/HTML/Element/input)
 
 > 속성
 * [value](https://www.tcpschool.com/html-tag-attrs/input-value): <input> 태그의 value 속성은 <input> 요소의 초깃값(value)을 명시
