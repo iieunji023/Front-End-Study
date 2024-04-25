@@ -16,7 +16,7 @@
 3. 클래스 선택자 = 태그 옵션으로 저장 / 반복가능 / **.class**사용
 4. 아이디 선택자 = 태그 옵션으로 저장 / 반복 불가능 / **#id**사용 / 우선순위가 높음
 
-*클래스 아이디 명 삽입 규칙
+* 클래스 아이디 명 삽입 규칙
   * 첫글자 영어
   * 빈공백 인식x
   * 특수문자 - , _ 만 가능
@@ -25,34 +25,34 @@
 ### 클래스명
 * 클래스명에 띄워쓰기를 하면 또 다른 클래스명이 된다.
 
-<details>
-    <summary>코드</summary>
-    
-    ```
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <title>multi_clasll</title>
-      <style>
-        .item {
-          color: pink;
-        }
+  <details>
+      <summary>코드</summary>
+      
+      ```
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <title>multi_clasll</title>
+        <style>
+          .item {
+            color: pink;
+          }
 
-        .header {
-          background-color: aliceblue;
-        }
-      </style>
-    </head>
-    <body>
-      <h1 class="item header">동해물과 백두산이</h1>
-    </body>
-    </html>
+          .header {
+            background-color: aliceblue;
+          }
+        </style>
+      </head>
+      <body>
+        <h1 class="item header">동해물과 백두산이</h1>
+      </body>
+      </html>
 
-    <!-- 
-      클래스명에 띄워쓰기를 하면 또 다른 클래스명이 된다.
-    -->
-    ```
+      <!-- 
+        클래스명에 띄워쓰기를 하면 또 다른 클래스명이 된다.
+      -->
+      ```
 
-    * item, header 클래스명을 2개로 인식함
-</details>
+      * item, header 클래스명을 2개로 인식함
+  </details>
 
