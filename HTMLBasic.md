@@ -314,3 +314,191 @@
 
   ![nested](/img/nest.png)
   </details>
+
+## ```<table> - <tr>, <th>, <td>```
+> 태그
+* tr (table row) : 행
+* td (table data) : 행의 내용
+* th (table heading) : 행, 열의 제목
+* caption : 표 제목
+* col / colgroup : 스타일 지정을 위한 열(그룹)
+* thead : 머리글
+* tfoot : 꼬리말
+* tbody : 본문
+
+> 속성
+* [rowspan/colspan](https://m.blog.naver.com/gounsori90/220531860547)
+  * 가로와 세로 셀을 병합할 수 있음
+  <details>
+    <summary>코드_table_basic</summary>
+
+    ```
+    <html>
+      <head>  
+        <title>Table</title>
+      </head>
+      <body>
+        <table border="1" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+            <td>1행 3열</td>
+            <td>1행 4열</td>
+          </tr>
+          <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+            <td>2행 3열</td>
+            <td>2행 4열</td>
+          </tr>
+          <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+            <td>3행 3열</td>
+            <td>3행 4열</td>
+          </tr>
+        </table>
+      </body>
+    </html>
+
+    <!-- 
+      <table> 태그로 테이블 만든다.
+      <tr>태그로 한 행을 구성하고 <th>태그로 제목, <td>태그로  셀을 작성한다.
+      border 속성을 사용하여 테두리를 만든다.
+    -->
+    ```
+  </details>
+
+  <details>
+    <summary>결과</summary>
+
+  ![table_basic](/img/table_basic.png)
+  </details>
+
+  <details>
+    <summary>코드_table</summary>
+
+    ```
+    <html>
+      <head>  
+        <title>Table</title>
+      </head>
+      <body>
+        <table border="1" >
+          <tr>
+            <th></th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+          </tr>
+          <tr>
+            <td>1교시</td>
+            <td>영어</td>
+            <td>국어</td>
+            <td>과학</td>
+            <td>미술</td>
+            <td>기술</td>
+          </tr>
+          <tr>
+            <td>2교시</td>
+            <td>도덕</td>
+            <td>체육</td>
+            <td>영어</td>
+            <td>수학</td>
+            <td>사회</td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    ```
+  </details>
+
+  <details>
+    <summary>결과</summary>
+
+  ![table](/img/table.png)
+  </details>
+
+    <details>
+    <summary>코드_table_span</summary>
+
+    ```
+    <html>
+      <head>
+
+      </head>
+      <body>
+        <table border="1">
+          <tr>
+            <th colspan="2">지역별 홍차</th>
+          </tr>
+          <tr>
+            <th rowspan="3">중국</th>
+            <td>정산소총</td>
+          </tr>
+          <tr>
+            <td>기문</td>
+          </tr>
+          <tr>
+            <td>운남</td>
+          </tr>
+          <tr>
+            <th rowspan="4">인도 및 스리랑카</th>
+            <td>아삼</td>
+          </tr>
+          <tr>
+            <td>실론</td>
+          </tr>
+          <tr>
+            <td>다질링</td>
+          </tr>
+          <tr>
+            <td>닐기리</td>
+          </tr>
+        </table>
+      </body>
+    </html>
+    ```
+  </details>
+
+  <details>
+    <summary>결과</summary>
+
+  ![table_span](/img/table_span.png)
+  </details>
+
+## ```<img>```
+> href와 src의 차이
+* href : <a> 태그에 홈페이지 등의 주소를 입힐때 사용 / 사용자의 클릭이 있을 때 이동
+* src : <img> 태그에 파일 디렉토리 경로에 있는 어떠한 이미지를 지성하여 웹 페이지에 결과물을 출력할때 사용 / 사용자의 클릭없이 자동으로 출력
+
+    <details>
+    <summary>코드</summary>
+
+    ```
+    <html>
+      <head>
+        <title>img</title>
+      </head>
+      <body>
+        <img src="/img/3.jpg" alt="짱구우" width="300">
+        <img src="Nothing" alt="이미지가 존재하지 않습니다" width="300">
+      </body>
+    </html>
+
+    <!-- 
+      source 속성은 위치경로를 나타낸다.
+      href: <a> 태그에 홈페이지 등의 주소를 입힐때 사용 / 사용자의 클릭이 있을 때 이동
+      src: <img> 태그에 파일 디렉토리 경로에 있는 어떠한 이미지를 지성하여 웹 페이지에 결과물을 출력할때 사용 / 사용자의 클릭없이 자동으로 출력
+      크기는 width, height
+    -->
+    ```
+  </details>
+
+  <details>
+    <summary>결과</summary>
+
+  ![img](/img/jjanggu.png)
+  </details>
