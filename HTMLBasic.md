@@ -505,13 +505,13 @@
 
 ## ```<input>```
 [summary](https://www.notion.so/3587e87784b44ed7b7c7cd1a1c854fba?pvs=4)
-> 개념
+> **개념**
 * <input> 태그는 사용자로부터 입력을 받을 수 있는 입력 필드(input filed)를 정의할 때 사용
 * <input> 요소는 사용자가 데이터를 입력할 수 있는 입력 필드를 선언하기 위해 <form> 요소 내부에서 사용
   * 이러한 입력 필드는 <input> 요소의 type 속성값을 달리함으로써 여러 가지 모양으로 나타낼 수 있다.
-> [```<input>``` 유형](https://sorto.me/docs/Web/HTML/Element/input)
+> **[```<input>``` 유형](https://sorto.me/docs/Web/HTML/Element/input)**
 
-> 속성
+> **속성**
 * [value](https://www.tcpschool.com/html-tag-attrs/input-value): <input> 태그의 value 속성은 <input> 요소의 초깃값(value)을 명시
 
     <details>
@@ -605,3 +605,33 @@
 * value 는 해당 태그의 값
 * 서버에서 name 명으로 꺼낸 값에는 value 에 해당하는 값이 들어있다.
 
+> **동적인 페이지**
+![dy](/img/dy.png)
+* ```입력 <input type="text" name="input">```
+* 홍길동이라고 입력을 하면 서버로 보내짐
+* 클라이언트에서 데이터를 입력하면 서버에서 데이터를 받아서 처리한 후 클라이언트에게 다시 보내줌
+* 데이터가 서버에 저장될 때는 `input`이라는 이름으로 저장됨
+    * 변수명과 비슷한 맥락
+
+  <details>
+      <summary>예제_radio</summary>
+
+      ```
+          <!-- 사용자가 입력하는 입력 양식 -->
+          ID <input type="text" name="id"><br><br>
+          PW <input type="password" name="pw"><br><br>
+          <input type="file" name="file" value="file"><br><br>
+          <input type="checkbox" name="cb" value="checkbox"> 체크 <br><br>
+          <input type="radio" name="radio" value="radio"> 라디오버튼 <br><br>
+          <!-- 보이지 않는 입력 양식 -->
+          <input type="hidden" name="hidden" value="hidden">
+
+          <input type="button" value="button"><br><br>
+          <input type="reset" value="reset"><br><br>
+          <input type="submit" value="제출">
+      ```
+
+      <summary>결과</summary>
+
+    ![dy](/img/dy1.png)
+    </details>
