@@ -327,8 +327,8 @@
 * tbody : 본문
 
 > 속성
-* [rowspan/colspan](https://m.blog.naver.com/gounsori90/220531860547)
-  * 가로와 세로 셀을 병합할 수 있음
+* [rowspan/colspan](https://m.blog.naver.com/gounsori90/220531860547) : 가로와 세로 셀을 병합할 수 있음
+
   <details>
     <summary>코드_table_basic</summary>
 
@@ -502,3 +502,114 @@
 
   ![img](/img/jjanggu.png)
   </details>
+
+## ```<input>```
+[summary](https://www.notion.so/3587e87784b44ed7b7c7cd1a1c854fba?pvs=4)
+> 개념
+* <input> 태그는 사용자로부터 입력을 받을 수 있는 입력 필드(input filed)를 정의할 때 사용
+* <input> 요소는 사용자가 데이터를 입력할 수 있는 입력 필드를 선언하기 위해 <form> 요소 내부에서 사용
+  * 이러한 입력 필드는 <input> 요소의 type 속성값을 달리함으로써 여러 가지 모양으로 나타낼 수 있다.
+> [<input> 유형] (https://sorto.me/docs/Web/HTML/Element/input)
+
+> 속성
+* [value](https://www.tcpschool.com/html-tag-attrs/input-value): <input> 태그의 value 속성은 <input> 요소의 초깃값(value)을 명시
+
+    <details>
+    <summary>예제_value</summary>
+
+    ```
+    <form action="/examples/media/action_target.php" method="get">
+        이름 : <input type="text" name="st_name" value="홍길동"><br>
+        남 <input type="radio" name="gender" value="male">
+        여 <input type="radio" name="gender" value="female"><br>
+        <input type="submit" value="서버로 제출하기">
+    </form>
+    ```
+  </details>
+
+* [pattern](https://www.tcpschool.com/html-tag-attrs/input-pattern): <input> 태그의 pattern 속성은 폼 제출 시 <input> 요소의 값을 검사할 때 사용될 정규 표현식(regular expression)을 명시
+  * pattern 속성은 정규표현식을 작성하여 입력의 포맷여부를 확인할 수 있다.
+  * ```<input>``` 태그의 입력값 검사에 유효하다.
+
+  <details>
+    <summary>예제_pattern</summary>
+
+    ```
+    생년월일 <input type="text" name="bday" pattern="[0-9]{6}"><br><br>
+    ```
+    * 0~9까지 6글자만 허용
+
+    <summary>결과</summary>
+
+  ![pattern](/img/pattern1.png)
+  * 올바르게 입력시 제출됨
+  ![pattern](/img/pattern2.png)
+  * 글자 수 초과시 오류발생
+
+  </details>
+
+* radio
+
+  <details>
+    <summary>예제_radio</summary>
+
+    ```
+    <html>
+      <head>
+        <title>form_radio</title>
+      </head>
+      <body>
+        <form>
+          <fieldset>
+            <label for="username">이름</label>
+            <input type="text" name="user" id="username"><br><br>
+            <input type="radio" name="gender" id="man" value="m">
+            <label for="man">남성</label>
+            <input type="radio" name="gender" id="woman" value="w">
+            <label for="woman">여성</label><br><br>
+            <input type="submit" value="가입">
+            <button>취소</button>
+          </fieldset>
+        </form>
+      </body>
+    </html>
+
+    <!-- 
+      라디오 버튼은 name 속성이 같아야만 여러개 중 한개만 선택된다.
+    -->
+    ```
+
+    <summary>결과</summary>
+
+  ![pattern](/img/radio.png)
+  * 이름은 user, 성별은 m 또는 w로 저장
+
+  </details>
+
+```
+[<input>태그 id와 name의 차이](https://velog.io/@dongeranguk/input-%ED%83%9C%EA%B7%B8-id%EC%99%80-name%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+* id
+  * page 안에서 **중복으로 사용할 수 없으며, 주로 JavaScript에서 다루기 위해** 지정한다.
+  * id 속성으로 설장된 값은 @RequestMapping에 지정한 Server단(클래스 or 메소드)의 파라미터로 넘어가지 않기 때문에 **Server단에서 접근이 불가능**하다.
+* name
+  * page 영역에서 **중복되어 사용이 가능**하며, **action에 해당하는 페이지에 전달할 수 있는 파라미터로 사용**한다.
+  * 태그의 **name 값이 키(Key)**로 해서 값(Value)가 전송된다.
+  * 즉, request에 값이 전달될 때 Map과 마찬가지로 **Key와 Value 쌍의 형식으로 데이터가 저장**된다.
+```
+
+```
+[<input> 태그 name과 value의 차이]
+* name은 태그명, 폼 서브밋시 서버에서 name 명으로 값을 가져올 수 있다.
+* value 는 해당 태그의 값
+* 서버에서 name 명으로 꺼낸 값에는 value 에 해당하는 값이 들어있다.
+
+Form 태그 자식들 즉 <form> <input .... > </form> 
+안에 ```<input>```을 어딘가 다른 페이지로 전달할때
+name은 전달받는 페이지 입장에서 값을 꺼낼 수 있는 키이다.
+
+우편물에 비유하자면 다른 페이지를 아파트라고 한다면
+```<input>```태그에 name은 해당 호수라 볼 수 있고, value는 내용물
+name = “202호” value=”소포”
+받는 아파트에서 name (몇호인지 안써있다면) 이 없다면 해당 우편물을 꺼낼 수 없다.
+```
+
