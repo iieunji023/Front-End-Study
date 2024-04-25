@@ -151,7 +151,7 @@
   <details>
     <summary>결과</summary>
 
-      ![hr](/img/hr.png)
+  ![hr](/img/hr.png)
   </details>
 
 ## ```<a>```
@@ -233,8 +233,8 @@
   <details>
     <summary>결과</summary>
 
-      ![target](/img/a_target.png)
-      ![target](/img/a.png)
+  ![target](/img/a_target.png)
+  ![target](/img/a.png)
   </details>
 
 ## ```<ol>, <ul>```
@@ -272,7 +272,7 @@
   <details>
     <summary>결과</summary>
 
-      ![target](/img/list.png)
+  ![list](/img/list.png)
   </details>
 
    <details>
@@ -312,5 +312,5 @@
   <details>
     <summary>결과</summary>
 
-      ![target](/img/nest.png)
+  ![nested](/img/nest.png)
   </details>
