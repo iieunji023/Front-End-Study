@@ -630,7 +630,7 @@
           <input type="reset" value="reset"><br><br>
           <input type="submit" value="제출">
 
-      <summary>결과</summary>
+    <summary>결과</summary>
 
     ![dy](/img/dy1.png)
     </details>
