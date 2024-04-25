@@ -539,12 +539,13 @@
     ```
     * 0~9까지 6글자만 허용
 
-    <summary>결과</summary>
+      <summary>결과</summary>
 
-  ![pattern](/img/pattern1.png)
-  * 올바르게 입력시 제출됨
-  ![pattern](/img/pattern2.png)
-  * 글자 수 초과시 오류발생
+    ![pattern](/img/pattern1.png)
+    * 올바르게 입력시 제출됨
+    
+    ![pattern](/img/pattern2.png)
+    * 글자 수 초과시 오류발생
 
   </details>
 
