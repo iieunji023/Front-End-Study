@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시판 입력 양식</title>
+  <style>
+    #content {
+      text-align: center;
+    }
+
+    #textarea {
+      margin-top: 5px;
+      margin-left: 15px;
+
+    }
+
+    #sub{
+      margin-left: 55px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>글 작성하기</h1>
+  <form action="#">
+  <b>작성자 <input type="text" name="name"></b><br>
+  <b>아이디 <input type="text" name="id"></b><br>
+  <b>이메일 <input type="email" name="email"></b>
+  @ <input type="text"><br>
+  <b>휴대폰 </b>
+  <select>
+    <option selected>010</option>
+    <option>011</option>
+    <option>017</option>
+  </select>
+   - <input type="text" >  - <input type="text" ><br>
+  <b>글제목 <input type="text" name="title"></b><br>
+  <span id="content"><b>내용 </b></span>
+  <textarea id="textarea"></textarea><br>
+  <input type="submit" id="sub">
+</form>
+</body>
+</html>
