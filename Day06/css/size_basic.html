@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>size_basic</title>
   <style>
+    /* p:nth-child(1)
+    p:nth-child(2) {font-size: 100%;}
+    p:nth-child(3) {font-size: 150%;}
+    p:nth-child(4) {font-size: 200%;} */
+
+    /* p:nth-child(2) {font-size: 1.0em;}
+    p:nth-child(3) {font-size: 1.5em;}
+    p:nth-child(4) {font-size: 2.0em;} */
+
     p:nth-child(1)
-    p:nth-child(2) {
-      font-size: 100%;
-    }
-
-    p:nth-child(3) {
-      font-size: 150%;
-    }
-
-    p:nth-child(4) {
-      font-size: 200%;
-    }
+    p:nth-child(2) {font-size: 16px;}
+    p:nth-child(3) {font-size: 24px;}
+    p:nth-child(4) {font-size: 32px;}
 
   </style>
 </head>
@@ -31,4 +32,21 @@
 <!-- 
   16px
   %: 기본으로 설정된 크기를 기준으로 상대적인 크기를 나타낸다.
+  em: 배수, 100% = 1em, 150% = 1.5em
+  px: 100% =  16px, 150% = 24px
  -->
+
+ <!-- 
+  절대길이 단위 1px = 0.265mm
+  모니터에 따라 상대적인 크기를 가진
+  -->
+
+ <!-- 
+  CSS 적용 우선 순위
+  1. 속성값 뒤에 !import
+  (import-block {color:red !important})
+  2. style을 직접 지정한 속성(인라인 속성)
+  3. #id로 지정한 속성
+  4. 태그로 지정한 속성
+  5. 상위 객체에 의해 상속된 속성
+  -->
