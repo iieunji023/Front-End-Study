@@ -224,7 +224,7 @@
 ```<li>```태그의 자식 ```<a>```태그
 ```<li>```태그의 첫번째 ```<a>```태그 자식
 
-    <details>
+  <details>
     <summary>코드</summary>
       
     ```
@@ -255,7 +255,7 @@
     </html>
       ```
 
-    </details>
+  </details>
 
 
 ### CSS 우선순위 적용
