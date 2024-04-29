@@ -30,7 +30,6 @@
   <details>
       <summary>코드</summary>
       
-      ```
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -53,7 +52,6 @@
       <!-- 
         클래스명에 띄워쓰기를 하면 또 다른 클래스명이 된다.
       -->
-      ```
 
   </details>
   
@@ -68,7 +66,6 @@
   <details>
       <summary>코드</summary>
       
-      ```
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -88,7 +85,6 @@
         <h4>반응 선택자</h4>
       </body>
       </html>
-      ```
 
   </details>
 
@@ -155,7 +151,6 @@
     <details>
       <summary>코드</summary>
       
-      ```
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -179,7 +174,6 @@
         </form>
       </body>
       </html>
-      ```
 
   </details>
 
@@ -227,7 +221,6 @@
   <details>
     <summary>코드</summary>
       
-    ```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -253,7 +246,6 @@
       </ul>
     </body>
     </html>
-      ```
 
   </details>
 
@@ -270,7 +262,6 @@
   <details>
     <summary>코드_nth-child 오류</summary>
       
-    ```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -299,7 +290,6 @@
       <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
     </body>
     </html>
-      ```
 
     </details>
 
@@ -309,7 +299,6 @@
   <details>
     <summary>코드</summary>
       
-    ```
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -342,7 +331,6 @@
       중요도와 적용범위가 같은 스타일의 경우는 나중에 선언된 스타일이 적용된다.
       (p태그의 경우 blue 적용)
     -->
-      ```
 
     </details>
     
