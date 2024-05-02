@@ -394,7 +394,7 @@
   <details>
       <summary>em_html_결과</summary>
 
-      [em](/img/em.png)
+      ![em](/img/em.png)
 
   </details>
 
