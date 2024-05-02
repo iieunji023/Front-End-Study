@@ -342,7 +342,7 @@
 * top-bottom-left-right
 
 ## [반응형 웹](https://kangddong.tistory.com/entry/Front-End-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8)
-> [반응형 웹](https://velog.io/@mangozoo20/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)이란?
+> **[반응형 웹](https://velog.io/@mangozoo20/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)**이란?
 * 디자인과 개발이 화면 크기, 플랫폼 및 방향 같은 사용자의 행동과 환경에 반응하는 것을 말한다.
 * <U>웹사이트에 있는 다른 콘텐츠의 크기</U>가 <U>웹사이트를 보고 있는 화면의 크기</U>를 기반으로 **콘텐츠의 크기를 조정하고 재구성**한다.
 
@@ -350,7 +350,7 @@
 -> CSS를 사용하여 하드 코딩 측정을 피하고 ***상대 측정***을 사용해야 한다.
 * 상대 측정을 통해 화면 크기나 레이아웃에 관계없이 웹 사이트의 비율을 유지시킬 수 있다.
 
-> 상대 측정
+> **상대 측정**
 * %, em, rem
 [CSS 단위 적용 기준]
 1. 부모요소에 따라서 사이즈가 변경되어야 하는 경우: %, em
@@ -359,8 +359,8 @@
    폰트에 따라서 크기가 변경될 경우: em, rem
 
   > [em과 rem](https://yozm.wishket.com/magazine/detail/1410/)
-  * rem은 루트 요소에 있는 폰트 사이즈에 따라서 크기가 결정된다.
-  * em은 부모 요소의 폰트 사이즈에 따라서 크기가 결정된다.
+  * rem은 **루트 요소에 있는 폰트 사이즈에 따라서** 크기가 결정된다.
+  * em은 **부모 요소의 폰트 사이즈에 따라서** 크기가 결정된다.
 
   <details>
       <summary>em_html_코드</summary>
@@ -392,9 +392,10 @@
   </details>
 
   <details>
-    <summary>em_html_결과과</summary>
+    <summary>em_html_결과</summary>
 
   ![em](/img/em.png)
   </details>
 
-* 고전적인 방법의 layout은 Position, float, table
+* 고전적인 방법의 layout은 Position, float, table, 
+                flex, grid

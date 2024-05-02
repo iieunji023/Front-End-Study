@@ -1,0 +1,18 @@
+/* 공통적으로 적용되는 사항 */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;   /*vw: viewport width*/
+  height: 100vh;  /*vw: viewport height*/
+  margin: 0;
+}
+
+.item {
+  display: flex;
+}
+
+.color1 {
+  
+}
