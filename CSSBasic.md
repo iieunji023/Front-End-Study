@@ -392,9 +392,9 @@
   </details>
 
   <details>
-      <summary>em_html_결과</summary>
+    <summary>em_html_결과과</summary>
 
-      ![em](/img/em.png)
+  ![em](/img/em.png)
   </details>
 
 * 고전적인 방법의 layout은 Position, float, table
