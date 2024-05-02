@@ -296,7 +296,7 @@
   * [nth-child 오류](https://stackoverflow.com/questions/23117175/nth-child-strange-behavior-with-h1-and-p)
   * p태그의 하위태그가 없기 때문에 이런 경우에는 nth-of-type(1)를 사용해야 한다.
 
-    <details>
+  <details>
       <summary>코드</summary>
         
       <!DOCTYPE html>
@@ -332,7 +332,7 @@
         (p태그의 경우 blue 적용)
       -->
 
-    </details>
+  </details>
 
 ### position
 * 절대좌표
