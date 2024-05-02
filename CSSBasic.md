@@ -296,43 +296,43 @@
   * [nth-child 오류](https://stackoverflow.com/questions/23117175/nth-child-strange-behavior-with-h1-and-p)
   * p태그의 하위태그가 없기 때문에 이런 경우에는 nth-of-type(1)를 사용해야 한다.
 
-  <details>
-    <summary>코드</summary>
-      
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>cascading</title>
-      <style>
-        p{
-          color: black;
-        }
-        p{
-          color: blue;
-        }
-        h1{
-          color: brown !important;
-        }
-      </style>
-    </head>
-    <body>
-      <h1 style="color: green;">레드향</h1>
-      <p style="color: red;">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
-      <p>레드향은 한라봉과 귤을 교배한 것으로</p>
-      <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
-    </body>
-    </html>
+    <details>
+      <summary>코드</summary>
+        
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>cascading</title>
+        <style>
+          p{
+            color: black;
+          }
+          p{
+            color: blue;
+          }
+          h1{
+            color: brown !important;
+          }
+        </style>
+      </head>
+      <body>
+        <h1 style="color: green;">레드향</h1>
+        <p style="color: red;">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+        <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+      </body>
+      </html>
 
-    <!-- 
-      첫번째 테스트인 h1요소에는 타입 스타일과 인라인 스타일 모드 사용
-      우선 순위가 타입 스타일 정의에 있는 !important가 높아 타입 스타일이 적용
-      중요도와 적용범위가 같은 스타일의 경우는 나중에 선언된 스타일이 적용된다.
-      (p태그의 경우 blue 적용)
-    -->
+      <!-- 
+        첫번째 테스트인 h1요소에는 타입 스타일과 인라인 스타일 모드 사용
+        우선 순위가 타입 스타일 정의에 있는 !important가 높아 타입 스타일이 적용
+        중요도와 적용범위가 같은 스타일의 경우는 나중에 선언된 스타일이 적용된다.
+        (p태그의 경우 blue 적용)
+      -->
 
-  </details>
+    </details>
 
 ### position
 * 절대좌표
