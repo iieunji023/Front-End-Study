@@ -342,7 +342,7 @@
 * top-bottom-left-right
 
 ## [반응형 웹](https://kangddong.tistory.com/entry/Front-End-%EB%B0%98%EC%9D%91%ED%98%95-%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8)
-> **[반응형 웹](https://velog.io/@mangozoo20/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)**이란?
+> [반응형 웹](https://velog.io/@mangozoo20/CSS-%EB%B0%98%EC%9D%91%ED%98%95-%EB%94%94%EC%9E%90%EC%9D%B8%EC%97%90-%EB%8C%80%ED%95%98%EC%97%AC)이란?
 * 디자인과 개발이 화면 크기, 플랫폼 및 방향 같은 사용자의 행동과 환경에 반응하는 것을 말한다.
 * <U>웹사이트에 있는 다른 콘텐츠의 크기</U>가 <U>웹사이트를 보고 있는 화면의 크기</U>를 기반으로 **콘텐츠의 크기를 조정하고 재구성**한다.
 
@@ -397,5 +397,5 @@
   ![em](/img/em.png)
   </details>
 
-* 고전적인 방법의 layout은 Position, float, table, 
-                flex, grid
+* 고전적인 방법의 layout은 Position, float, table 
+* flex, grid
