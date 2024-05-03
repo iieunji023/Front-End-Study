@@ -55,7 +55,6 @@ document.getElementById("out");
   ![console](/img/console_alert4.png)
   </details>
 
-
 > 내부에서 스크립트 사용
   * ```<script>``` 태그는 HTML문서 내부에서 자바스크립트를 사용할 수 있게 해준다.
   * 내부에서 스크립트를 사용하는 방식은 스크립트의 사용량이 간단할 때 사용한다.
@@ -76,3 +75,17 @@ document.getElementById("out");
 #### [async와 defer 정리](https://yceffort.kr/2020/10/defer-than-async)
 * async로 로드된 스크립트는 다운로드가 완료되면 즉시 구문 분석을 하고 실행된다. 그에 반해 defer는 HTML 문서가 파싱되기 전까지 실행되지 않는다.
 * async는 순서없이 로드가 가능하지만 defer는 마크업 순서대로 로딩된다.
+
+## 용어 및 개념 정리
+* console.log()
+* document.write()
+* window.alert()
+* document.getElementById().innerHTML
+
+> **let, const, var**
+### let: 지역변수
+![let](/img/let.png)
+  * undefined도 하나의 타입
+
+### const: 상수
+### var: 함수 레벨 스코프
