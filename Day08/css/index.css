@@ -1,0 +1,45 @@
+body {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  grid-area: header;
+}
+main {
+  background-color: #fff;
+  grid-area: main;
+}
+aside {
+  background-color: orange;
+  grid-area: side;
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  grid-area: footer;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas: 
+      'header header'
+      'main side'
+      'footer footer';
+}
+
+header, main, aside, footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 
+  https://velog.io/@forest0501/CSS-Grid-Grid-Template-Areas%EC%99%80-Grid-Row-Grid-Column
+*/

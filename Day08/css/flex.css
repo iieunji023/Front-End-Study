@@ -4,9 +4,40 @@
 
   /* 컨테이너 박스를 flex box로 만들기 */
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
   flex-wrap: nowrap;
+  /* justify-content: center; */
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 
+}
+
+.item{
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid black;
+  text-align: center;
+  justify-content: center;
+  
+}
+
+
+.item1{
+  background-color: red;
+}
+.item2{
+  background-color: orange;
+}
+.item3{
+  background-color: yellow;
+}
+.item4{
+  background-color: green;
+}
+.item5{
+  background-color: blue;
 }
 
 /* body, html {
@@ -15,6 +46,12 @@
 } */
 
 /* 
-  height: 100%
-  flex-direction: 기준축을 정의
-  row, row-reverse, column, column-reverse */
+  - vh(view height): 화면에 보이는 공간을 기준
+  - flex-direction: 기준축을 정의
+    - row, row-reverse, column, column-reverse 
+  - justify-content: 중심축에서 아이템의 배치를 담당
+  - align-items: 수직축의 라인을 기준으로 아이템들이 정렬, 반대축에서 아이템 배치하는 속성
+  - align-content: 수직축의 라인을 기준으로(두 줄 이상일 때만) 라인 자체가 정렬된다.
+  https://letsgojieun.tistory.com/49
+  https://www.inflearn.com/questions/752797/align-items-vs-align-content
+  */
