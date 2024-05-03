@@ -6,6 +6,7 @@ document.getElementById("out");
 ```
 
 > [document.getElementById](https://kyounghwan01.github.io/blog/JS/JSbasic/getElementById/#%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%87%E1%85%A5%E1%86%B8)
+* [참고](https://meaningone.tistory.com/316)
   * 태그에 있는 id 속성을 사용하여 해당 태그에 접근하여 하고 싶은 작업을 할 때 쓰는 함수
   * 해당 id가 없는 경우 null 에러가 발생
 
@@ -85,13 +86,51 @@ document.getElementById("out");
 > [let, const, var](https://velog.io/@elma98/%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84-var-let-const%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-Hoisting)
 > 참고자료
 * [var, let, const](https://velog.io/@ljh305/var-let-const%EC%9D%98-%EC%B0%A8%EC%9D%B4-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EA%B3%BC-%EC%8A%A4%EC%BD%94%ED%94%84)
+
+* 변수를 선언할 때 초기값을 할당(초기화)하지 않으면 자동으로 <U>undefined</U> 값으로 초기화된다.
+
+### var: 함수 레벨 스코프
+```
+var variable;
+console.log(variable) // undefined
+```
+* <U>var</U>로 선언하면 **같은 이름으로 중복선언**이 가능합니다.
+
+```
+var variable = 1;
+var variable = 2;
+console.log(variable) // 2
+```
+
 ### let: 지역변수
 ![let](/img/let.png)
   * undefined도 하나의 타입
 
-### const: 상수
-### var: 함수 레벨 스코프
+* **초기화해주지 않아도 재할당이 가능**하다.
+```
+let count;
+console.log(count) // undefined
+count = 0;
+console.log(count) // 0;
+```
 
-* 변수 호이스팅
-  * 선언 전에 초기화나 함수 호출이 가능하다.
-  * 이는 변수 선언이 런타임이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
+### const: 상수
+* **중복선언과 재할당이 불가능**하며 **선언과 동시에 초기화** 해주어야한다.
+```
+const constance = 0;
+constance = 1; // TypeError: Assignment to constant variable.
+const initial; // Uncaught SyntaxError: Missing initializer in const declaration
+const count = 0;
+let count; // SyntaxError: Identifier 'count' has already been declared.
+```
+
+
+### 변수 호이스팅
+> **호이스팅**이란?
+* 자바스크립트 엔진은 소스코드를 한 줄씩 읽으며 순차적으로 실행하기 전에 <br>
+  변수 선언을 포함한 모든 선언문을 찾아내어 먼저 실행한다.(필요한 메모리 공간을 미리 할당)
+* 마치 함수 안의 선언들을 모두 끌어올려 해당 함수 유효 범위 최상단에 선언된 것과 같은 특징을 **호이스팅**이라고 한다.
+
+* 선언 전에 초기화나 함수 호출이 가능하다.
+* 이는 변수 선언이 런타임이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
+

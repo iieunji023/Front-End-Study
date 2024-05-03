@@ -400,3 +400,5 @@
 * 고전적인 방법의 layout은 Position, float, table 
 * flex, grid
 > flex
+
+> [media query](https://duektmf34.tistory.com/29)
