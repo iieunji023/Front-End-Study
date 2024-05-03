@@ -82,10 +82,16 @@ document.getElementById("out");
 * window.alert()
 * document.getElementById().innerHTML
 
-> **let, const, var**
+> [let, const, var](https://velog.io/@elma98/%EA%B8%B0%EC%88%A0-%EB%A9%B4%EC%A0%91-%EB%8C%80%EB%B9%84-var-let-const%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90%EA%B3%BC-Hoisting)
+> 참고자료
+* [var, let, const](https://velog.io/@ljh305/var-let-const%EC%9D%98-%EC%B0%A8%EC%9D%B4-%ED%98%B8%EC%9D%B4%EC%8A%A4%ED%8C%85%EA%B3%BC-%EC%8A%A4%EC%BD%94%ED%94%84)
 ### let: 지역변수
 ![let](/img/let.png)
   * undefined도 하나의 타입
 
 ### const: 상수
 ### var: 함수 레벨 스코프
+
+* 변수 호이스팅
+  * 선언 전에 초기화나 함수 호출이 가능하다.
+  * 이는 변수 선언이 런타임이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
