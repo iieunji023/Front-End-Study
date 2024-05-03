@@ -39,7 +39,7 @@ document.getElementById("out");
     ![innerHTML](/img/innerHTML.png)
     </details>
 
-* 콘솔창에서 확인 가능
+* 웹페이지 콘솔창에서도 사용 가능
 
   <details>
       <summary>결과</summary>
@@ -51,3 +51,10 @@ document.getElementById("out");
   ![console](/img/console_alert4.png)
   </details>
 
+
+* 내부에서 스크립트 사용
+  * ```<script>``` 태그는 HTML문서 내부에서 자바스크립트를 사용할 수 있게 해준다.
+  * 내부에서 스크립트를 사용하는 방식은 스크립트의 사용량이 간단할 때 사용한다.
+  * ```<script>```를 head에 쓰게 되면 스크립트가 끝날때까지 body로 못넘아감
+  * body에 ```<script>```를 사용하면 전체를 다 볼 수 있음
+  * 스크립트량이 많아지면, **외부에 스크립트파일을 만들어서 불러오기 형식**으로 쓰는게 좋음
