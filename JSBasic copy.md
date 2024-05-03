@@ -38,3 +38,16 @@ document.getElementById("out");
 
     ![innerHTML](/img/innerHTML.png)
     </details>
+
+* 콘솔창에서 확인 가능
+
+  <details>
+      <summary>결과</summary>
+
+  ![console](/img/console_alert.png)
+  ![console](/img/console_alert1.png)
+  ![console](/img/console_alert2.png)
+  ![console](/img/console_alert3.png)
+  ![console](/img/console_alert4.png)
+  </details>
+
