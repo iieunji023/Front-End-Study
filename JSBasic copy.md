@@ -10,8 +10,9 @@ document.getElementById("out");
   * 해당 id가 없는 경우 null 에러가 발생
 
     <details>
-      <summary>em_html_코드</summary>
+      <summary>코드</summary>
       
+      ```
       <!DOCTYPE html>
       <html lang="en">
       <head>
@@ -28,11 +29,12 @@ document.getElementById("out");
         </div>
       </body>
       </html>
+      ```
 
-  </details>
+    </details>
 
-  <details>
-    <summary>결과</summary>
+    <details>
+      <summary>결과</summary>
 
-  ![innerHTML](/img/innerHTML.png)
-  </details>
+    ![innerHTML](/img/innerHTML.png)
+    </details>
