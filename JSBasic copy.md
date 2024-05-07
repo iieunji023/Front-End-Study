@@ -142,6 +142,46 @@ let count; // SyntaxError: Identifier 'count' has already been declared.
 * 선언 전에 초기화나 함수 호출이 가능하다.
 * 이는 변수 선언이 런타임이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
 
+* **var는 호이스팅시 초기화**가 되지만, let은 호이스팅시 초기화되지 않는다.
+   <details>
+    <summary>코드_var</summary>
+
+    ```
+    console.log(age);
+    age = 5;
+    var age;
+    ```
+  </details>
+
+  * 호이스팅이 되면 아래 코드와 같은 형태
+  ```
+    var age;
+    console.log(age);
+    age = 5;
+  ```
+
+  <details>
+    <summary>결과</summary>
+
+  ![var](/img/var1.png)
+  </details>
+
+  <details>
+    <summary>코드_let</summary>
+
+    ```
+    console.log(age);
+    name = 4;
+    let name;
+    ```
+  </details>
+  
+  <details>
+    <summary>결과</summary>
+
+  ![let](/img/let2.png)
+  </details>
+
 ## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
 * 타입스크립트는 자바스크립트에 타입을 부여한 언어
 * 자바스크립트의 확장된 언어라고 볼 수 있다.
