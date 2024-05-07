@@ -148,6 +148,7 @@ let str = 'javascript';
 let len = str.length;
 console.log(len);
 
+// 자바스크립트는 동적 타입이다
 let text = 'hello';
 console.log(text.charAt(0));
 console.log(`value: ${text}, type: ${typeof text}`);
@@ -158,3 +159,37 @@ text = '10' + 5;
 console.log(`value: ${text}, type: ${typeof text}`);
 text = '22' + '2';
 console.log(`value: ${text}, type: ${typeof text}`);
+
+// const
+const bird = {species: "kestrel"};
+console.log(bird.species);
+bird.species = "Striated Caracara";
+console.log(bird.species);
+
+// 형변환
+console.log(String(30), String(true), String(false));
+console.log(String(null));
+console.log(Number('12345'));
+
+/* 
+  출력방법
+  1. console.log - 콘솔창에 출력
+  2. document.write - 웹페이지 문서에 출력
+  3. alert()  - 윈도우 알림창에 출력
+  4. innerHTML  - 웹페이지에 출력
+*/
+
+/*
+  버튼 입력방법
+  1. alert()
+  2. prompt()
+  3. confirm()
+*/
+
+// const name1 = prompt('이름을 입력하세요');
+// alert('반갑습니다.' + name1 + '님');
+
+const num1 = prompt('첫번째 정수를 입력하세요');
+const num2 = prompt('두번째 정수를 입력하세요')
+alert('두 정수의 합은 ' + (parseInt(num1)+parseInt(num2)) + '입니다.');
+// alert('두 정수의 합은 ' + (Number(num1)+Number(num2)) + '입니다.');
