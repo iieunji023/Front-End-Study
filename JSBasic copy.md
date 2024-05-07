@@ -151,14 +151,16 @@ let count; // SyntaxError: Identifier 'count' has already been declared.
     age = 5;
     var age;
     ```
+
+    * 호이스팅이 되면 아래 코드와 같은 형태
+    ```
+      var age;
+      console.log(age);
+      age = 5;
+    ```
   </details>
 
-  * 호이스팅이 되면 아래 코드와 같은 형태
-  ```
-    var age;
-    console.log(age);
-    age = 5;
-  ```
+
 
   <details>
     <summary>결과</summary>
