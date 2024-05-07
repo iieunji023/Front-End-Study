@@ -138,8 +138,23 @@ console.log(typeof(symbol1));
 console.log(symbol1 == symbol2);
 
 const symbol3 = Symbol.for('id');
-const symbol4 = Symbol.for('id');
+const symbol4 = Symbol.for('id');   // 입력 문자열로 키 생성
 
 console.log(symbol3);
 console.log(typeof symbol3);
 console.log(symbol3 == symbol4);
+
+let str = 'javascript';
+let len = str.length;
+console.log(len);
+
+let text = 'hello';
+console.log(text.charAt(0));
+console.log(`value: ${text}, type: ${typeof text}`);
+text = 1;
+console.log(`value: ${text}, type: ${typeof text}`);
+// console.log(text.charAt(0));
+text = '10' + 5;
+console.log(`value: ${text}, type: ${typeof text}`);
+text = '22' + '2';
+console.log(`value: ${text}, type: ${typeof text}`);
