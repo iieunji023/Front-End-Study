@@ -92,3 +92,54 @@ const message = `My name is ${name}`;
 console.log(message);
 
 // number, string, boolean, null, undefined, symbol(ES6), obj
+/*
+console.log(typeof(100));      // typeof()는 타입 확인
+let pi = 3.14;
+console.log(typeof(pi));      // number: -2^53 ~ 2^53
+let nothing = null;
+console.log(`value: ${nothing}, type=${typeof nothing}`);
+let y;
+console.log(`value: ${y}, type=${typeof y}`);
+
+const infinity = 1/0;
+console.log(infinity);
+const negativeInfinity = -1 / 0;
+console.log(negativeInfinity);
+const nAn = 'not a number' / 2;
+console.log(nAn);
+*/
+
+const char = 'a';
+const smith = 'smith';
+const greeting = 'Hello ' + smith;
+console.log(greeting);
+console.log(`value: ${char}, type: ${typeof char}`);
+console.log(`value: ${smith}, type: ${typeof smith}`);
+console.log(`value: ${greeting}, type: ${typeof greeting}`);
+
+const msg = 18 + 'old';
+console.log(msg);
+const i = '나는 ';
+const age = 30;
+console.log(i + age + '살 입니다.');
+/* boolean 
+   false: 0, null, undefined, NaN
+   true: any other value.
+*/
+
+/* symbol */
+const str1 = 'strId';
+const str2 = 'strId';
+console.log(str1 == str2);
+const symbol1 = Symbol('id');
+const symbol2 = Symbol('id');
+console.log(symbol1);
+console.log(typeof(symbol1));
+console.log(symbol1 == symbol2);
+
+const symbol3 = Symbol.for('id');
+const symbol4 = Symbol.for('id');
+
+console.log(symbol3);
+console.log(typeof symbol3);
+console.log(symbol3 == symbol4);

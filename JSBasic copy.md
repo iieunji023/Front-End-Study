@@ -265,7 +265,7 @@ const message = `My name is ${name}`;
 console.log(message);
 ```
 
-* 변수를 사용할 때는 백틱(``)을 사용해서 사용
+* 변수를 사용할 때는 백틱(``)을 사용
 
 ![동적타입](img/bb.png)
 
