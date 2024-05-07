@@ -77,6 +77,7 @@ document.getElementById("out");
 
 2. defer
 * defer 같은경우는 **모든 script 파일들이 다운로드 된 이후에 실행** 되기 때문에 훨씬 안전하다.
+* defer를 명시했을 때 js파일에서 document.write()를 사용하기 위해 document.open()과 document.close() 해주어야 한다.
 
 #### [async와 defer 정리](https://yceffort.kr/2020/10/defer-than-async)
 * async로 로드된 스크립트는 다운로드가 완료되면 즉시 구문 분석을 하고 실행된다. 그에 반해 defer는 HTML 문서가 파싱되기 전까지 실행되지 않는다.
