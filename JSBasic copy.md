@@ -291,7 +291,7 @@ console.log(message);
     ```
   </details>
 
-🚫 prompt는 String 문자열로 받아진다.
+🚫 prompt는 String 문자열로 받아진다.<br>
 [참고](https://velog.io/@p_seo_hn/prompt%EB%A1%9C-%EB%B0%9B%EC%9C%BC%EB%A9%B4-%EC%99%9C-string%EC%9C%BC%EB%A1%9C-%EB%B0%9B%EC%95%84%EC%A7%88%EA%B9%8C)
 > 문자열로 받아지는 이유
 * JS는 코드가 실행될 때 데이터타입이 정해지는데, prompt로 입력을 받을 때 어떤 종류의 데이터가 입력될지 확정할 수 없기 때문에 **일관성을 유지하기 위해 입력값을 문자열로 받는다**.
