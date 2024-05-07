@@ -160,8 +160,6 @@ let count; // SyntaxError: Identifier 'count' has already been declared.
     ```
   </details>
 
-
-
   <details>
     <summary>결과</summary>
 
@@ -183,6 +181,93 @@ let count; // SyntaxError: Identifier 'count' has already been declared.
 
   ![let](/img/let2.png)
   </details>
+
+  <details>
+    <summary>정리</summary>
+
+    ```
+    /* 변수 호이스팅 */
+    var a;
+    console.log("a의 값은 " + a);
+    console.log("b의 값은 " + b);
+    var b;
+    console.log("c의 값은 " + c);
+    let c;
+    let d;
+    console.log("d의 값은 " + d);
+
+    console.log(x === undefined);
+    var x = 3;
+    ```
+  </details>
+  
+  <details>
+    <summary>결과</summary>
+
+  ![호이스팅](/img/hosting.png)
+  ![호이스팅](/img/hosting1.png)
+  </details>
+
+### 전역변수/지역변수
+```
+/* 전역변수: 키워드없이 사용하면 전역변수 */
+n = 10;
+console.log(n);
+let n1 = 100;
+console.log(n1);
+
+/* 지역변수 */
+{
+  let name = 'scott';   // 지역변수
+  console.log(name);
+  name = 'adam';
+  console.log(name);
+  console.log(n);       // 전역변수 사용 가능 
+  console.log(n1);
+}
+
+console.log(name);      // 지역변수 사용 안됨
+```
+
+![전역변수/지역변수](/img/var.png)
+
+### 함수
+```
+(
+  function () {
+    console.log(myvar);         // undefined
+    var myvar = "local value";
+    console.log(myvar);
+  }
+)();
+```
+![함수](img/fun.png)
+
+> 함수 호이스팅
+```
+sayHello();
+function sayHello() {
+  console.log('Hello');
+}
+// sayHello();
+```
+
+![함수호이스팅](img/funhosting.png)
+
+### 동적 타입
+```
+let name = 'scott';
+console.log(name);
+name = 1200;
+console.log(name);
+name = 'eunji';
+const message = `My name is ${name}`;
+console.log(message);
+```
+
+* 변수를 사용할 때는 백틱(``)을 사용해서 사용
+
+![동적타입](img/bb.png)
 
 ## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
 * 타입스크립트는 자바스크립트에 타입을 부여한 언어
