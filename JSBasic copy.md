@@ -231,7 +231,7 @@ console.log(name);      // 지역변수 사용 안됨
 
 ![전역변수/지역변수](/img/var.png)
 
-### 함수
+### [함수](https://velog.io/@surim014/%EC%9B%B9%EC%9D%84-%EC%9B%80%EC%A7%81%EC%9D%B4%EB%8A%94-%EA%B7%BC%EC%9C%A1-JavaScript%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80-part-6-Function)
 ```
 (
   function () {

@@ -9,8 +9,8 @@ console.log("Hello JavaScript!~!");
 /* 
   변수
   1. 변수 선언(3개의 키워드) - var, let, const: ES6
-    let - 지역변수, 재선언 불가, 호이스팅 시 초기화 안됨 <-> var
-    const - 상수
+     let - 지역변수, 재선언 불가, 호이스팅 시 초기화 안됨 <-> var
+     const - 상수
 */
 
 // let name = 'adam';
