@@ -62,12 +62,17 @@ document.getElementById("out");
   * **```<script>```를 head에 쓰게 되면** HTML을 쭉 parsing하다가 script 태그가 보이면 HTML을 parsing하는것을 잠시 멈추고 필요한 JS 파일을 서버에서 다운받아서 그것을 실행한 다음에 파싱하는 부분으로 넘어간다.
     * 자바스크립트파일의 사이즈가 큰 경우에는 페이지가 로드 되는데 많은 시간이 소요되어 그냥 script를 head에 포함하는것은 좋지않다.
   * body에 ```<script>```를 사용하면 전체를 다 볼 수 있음
-  * 스크립트량이 많아지면, **외부에 스크립트파일을 만들어서 불러오기 형식**으로 쓰는게 좋음
+  * 스크립트 양이 많아지면, **외부에 스크립트파일을 만들어서 불러오기 형식**으로 쓰는게 좋음
+
+> 외부에 있는 스크립트 사용
+```
+<script src="variable.js"></script>
+```
 
 > [async와 defer의 차이](https://velog.io/@cherrycock/script-async%EC%99%80-defer%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 1. async
 * async 옵션으로 다수의 script 파일들을 다운로드 받게 되면
-**정의된script순서에 상관없이 다운로드 된 파일을 우선적으로 실행**한다.
+**정의된 script 순서에 상관없이 다운로드 된 파일을 우선적으로 실행**한다.
   * JS파일이 순서에 의존적이라면 문제가 생길 수 있다.
 
 2. defer
@@ -114,6 +119,9 @@ count = 0;
 console.log(count) // 0;
 ```
 
+* 재선언이 불가하다.
+![let](/img/let1.png)
+
 ### const: 상수
 * **중복선언과 재할당이 불가능**하며 **선언과 동시에 초기화** 해주어야한다.
 ```
@@ -134,3 +142,6 @@ let count; // SyntaxError: Identifier 'count' has already been declared.
 * 선언 전에 초기화나 함수 호출이 가능하다.
 * 이는 변수 선언이 런타임이 아니라 그 이전단계에서 먼저 실행되기 때문이다.
 
+## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
+* 타입스크립트는 자바스크립트에 타입을 부여한 언어
+* 자바스크립트의 확장된 언어라고 볼 수 있다.
