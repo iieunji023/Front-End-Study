@@ -284,11 +284,9 @@ console.log(message);
   <details>
     <summary>예제_정수합</summary>
 
-    ```
     const num1 = prompt('첫번째 정수를 입력하세요');
     const num2 = prompt('두번째 정수를 입력하세요')
     alert('두 정수의 합은 ' + (parseInt(num1)+parseInt(num2)) + '입니다.');
-    ```
   </details>
 
 🚫 prompt는 String 문자열로 받아진다.<br>
