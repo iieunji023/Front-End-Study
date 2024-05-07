@@ -12,7 +12,7 @@ HTML / CSS / JS studying
 * 글꼴이나 배경색, 너비와 높이, 위치 등을 지정하거나
   웹 브라우저, 스크린 크기, 장치에 따라서 화면을 다르게 표시될 수 있도록 지정할 수 있다.
 
-## [JavaScript](https://github.com/iieunji023/Front-End-Study/blob/main/JSBasic%20copy.md)
+## [JavaScript](https://github.com/iieunji023/Front-End-Study/blob/main/JSBasic.md)
 > 자바스크립트(JavaScript)란?
 * 자바스크립트(JavaScript)는 객체(object) 기반의 스크립트 언어
 * **HTML로는 웹의 내용을 작성**하고, **CSS로는 웹을 디자인**하며, **자바스크립트로는 웹의 동작을 구현**할 수 있다.
