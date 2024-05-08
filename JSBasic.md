@@ -402,6 +402,26 @@ console.log(fruits.includes('🍒'));   // includes(): 있는지 없는지 확�
 * 파라미터로 함수를 전달하는 함수
 * 예를 들어, forEach 함수의 경우 함수 안에 익명의 함수를 넣어서 forEach 문을 동작시킨다.
 
+```
+// 콜백함수
+function randomQuiz(answer, printYes, printNo) {
+  if(answer === 'i love you') {
+    printYes();
+  } else {
+    printNo();
+  }
+}
+
+const printYes = function()  {
+  console.log('Yes');
+}
+const printNo = function()  {
+  console.log('No');
+}
+
+randomQuiz('i love you', printYes, printNo);
+```
+
 ✅ 즉시실행함수
 > 즉시 실행 함수는 즉시 실행되며 단 한번만 호출되어 다시는 호출할 수 없다.
 ```
@@ -421,23 +441,35 @@ console.log(result2);
 
 ✅ 화살표함수
 ```
-// 콜백함수
-function randomQuiz(answer, printYes, printNo) {
-  if(answer === 'i love you') {
-    printYes();
-  } else {
-    printNo();
-  }
+console.clear();
+const simplePrint = function() {
+  console.log('simplePrint');
 }
+console.log(simplePrint);   // 함수 이름은 포인터(주소)
+simplePrint();
 
-const printYes = function()  {
-  console.log('Yes');
+const simplePrint1 = () => {
+  console.log('simplePrint');
 }
-const printNo = function()  {
-  console.log('No');
-}
+simplePrint1();
+const simplePrint2 = () => 
+  console.log('simplePrint');
+simplePrint2();
 
-randomQuiz('i love you', printYes, printNo);
+const addNum = (a,b) => {
+  return a+b;
+}
+console.log(addNum(10,20));
+
+const hi1 = () => {
+  alert('안녕하세요!');
+};
+// hi1();
+
+let hi2 = (user) => {
+  document.write(user + "님 안녕하세요.");
+};
+hi2('은지');
 ```
 
 ## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
