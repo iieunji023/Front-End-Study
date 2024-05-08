@@ -337,9 +337,9 @@ fruits.forEach((fruit, index) => {
 ```
 
 > [배열(array) 의 push(), pop(), unshift(), shift() 함수](https://electronic-moongchi.tistory.com/67)
-<summary>코드</summary>
+  <details>
+    <summary>코드</summary>
 
-    ```
     /let ary = [1, 2, 3, 4, 5];
     console.log(ary.length);
     ary.push(10);     // 배열의 원소를 마지막에 추가한다.
@@ -351,7 +351,6 @@ fruits.forEach((fruit, index) => {
     ary.pop();        // 배열의 마지막 원소를 삭제한다.
     console.log(ary.length);
     console.log(ary);
-    ```
   </details>
 
 
