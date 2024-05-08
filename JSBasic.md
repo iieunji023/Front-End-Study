@@ -355,6 +355,34 @@ console.log(arr2);
     console.log(ary);
   </details>
 
+> [배열(array) 의slice(), splice() 함수](https://www.daleseo.com/js-array-slice-splice/#google_vignette)
+
+  <details>
+    <summary>splice()</summary>
+
+    ```
+    // splice(시작인덱스, 삭제개수, 추가개수)
+    const fruits = ['🍒', '🍑'];
+
+    console.log(fruits);
+    fruits.push('🍉', '🍊', '🍓');
+    console.log(fruits);
+
+    fruits.splice(1, 1);    // 1번 인덱스에서 하나를 삭제한다.
+    console.log(fruits);
+    fruits.splice(2,2);     // 2번 인덱스에서 2개를 삭제
+    console.log(fruits);
+    fruits.splice(1, 1, '🍌', '🥝');
+    console.log(fruits);
+    ```
+  </details>
+  
+  <details>
+    <summary>결과</summary>
+
+  ![splice](/img/splice.png)
+  </details>
+
 
 ✅ [콜백함수](https://velog.io/@minidoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
 * 파라미터로 함수를 전달하는 함수
