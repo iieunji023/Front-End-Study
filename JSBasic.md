@@ -421,6 +421,23 @@ console.log(result2);
 
 ✅ 화살표함수
 ```
+// 콜백함수
+function randomQuiz(answer, printYes, printNo) {
+  if(answer === 'i love you') {
+    printYes();
+  } else {
+    printNo();
+  }
+}
+
+const printYes = function()  {
+  console.log('Yes');
+}
+const printNo = function()  {
+  console.log('No');
+}
+
+randomQuiz('i love you', printYes, printNo);
 ```
 
 ## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
