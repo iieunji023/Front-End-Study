@@ -314,7 +314,7 @@ console.log(arr2);
 > 배열출력
   <details>
     <summary>코드</summary>
-    ```
+    
     const fruits = ['🍉', '🍊', '🍓', '🍒', '🍑']
     console.log(fruits);
 
@@ -336,7 +336,6 @@ console.log(arr2);
     fruits.forEach((fruit, index) => {
       console.log(fruit, index);
     });
-    ```
   </details>
 
 > [배열(array) 의 push(), pop(), unshift(), shift() 함수](https://electronic-moongchi.tistory.com/67)
