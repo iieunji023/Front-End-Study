@@ -312,29 +312,32 @@ console.log(arr2);
 ```
 
 > 배열출력
-```
-const fruits = ['🍉', '🍊', '🍓', '🍒', '🍑']
-console.log(fruits);
+  <details>
+    <summary>코드</summary>
+    ```
+    const fruits = ['🍉', '🍊', '🍓', '🍒', '🍑']
+    console.log(fruits);
 
-// 기본 for
-for(i=0; i<fruits.length; i++) {
-  console.log(fruits[i]);
-}
+    // 기본 for
+    for(i=0; i<fruits.length; i++) {
+      console.log(fruits[i]);
+    }
 
-// for of
-for(let fruit of fruits) {
-  console.log(fruit);
-}
+    // for of
+    for(let fruit of fruits) {
+      console.log(fruit);
+    }
 
-// forEach
-fruits.forEach(function(fruit, index, array){   // 콜백함수: 매개변수처럼 사용되는 함수
-  console.log(fruit, index, array);
-});
+    // forEach
+    fruits.forEach(function(fruit, index, array){   // 콜백함수: 매개변수처럼 사용되는 함수
+      console.log(fruit, index, array);
+    });
 
-fruits.forEach((fruit, index) => {
-  console.log(fruit, index);
-});
-```
+    fruits.forEach((fruit, index) => {
+      console.log(fruit, index);
+    });
+    ```
+  </details>
 
 > [배열(array) 의 push(), pop(), unshift(), shift() 함수](https://electronic-moongchi.tistory.com/67)
   <details>
