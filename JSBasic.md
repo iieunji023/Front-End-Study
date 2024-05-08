@@ -303,6 +303,64 @@ const num2 = parseFloat(input)
 const num3 = Number(input)
 ```
 
+### 배열
+> 배열생성
+```
+const arr1 = new Array();       // new라는 키워드를 통해 생성자 호출
+const arr2 = [1, 2, 3, 4, 5];
+console.log(arr2);
+```
+
+> 배열출력
+```
+const fruits = ['🍉', '🍊', '🍓', '🍒', '🍑']
+console.log(fruits);
+
+// 기본 for
+for(i=0; i<fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// for of
+for(let fruit of fruits) {
+  console.log(fruit);
+}
+
+// forEach
+fruits.forEach(function(fruit, index, array){   // 콜백함수: 매개변수처럼 사용되는 함수
+  console.log(fruit, index, array);
+});
+
+fruits.forEach((fruit, index) => {
+  console.log(fruit, index);
+});
+```
+
+> [배열(array) 의 push(), pop(), unshift(), shift() 함수](https://electronic-moongchi.tistory.com/67)
+<summary>코드</summary>
+
+    ```
+    /let ary = [1, 2, 3, 4, 5];
+    console.log(ary.length);
+    ary.push(10);     // 배열의 원소를 마지막에 추가한다.
+    console.log(ary.length);
+    console.log(ary);
+    ary.unshift(0);   // 배열의 첫번째 요소로 추가한다.
+    console.log(ary.length);
+    console.log(ary);
+    ary.pop();        // 배열의 마지막 원소를 삭제한다.
+    console.log(ary.length);
+    console.log(ary);
+    ```
+  </details>
+
+
+✅ [콜백함수](https://velog.io/@minidoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
+* 파라미터로 함수를 전달하는 함수
+* 예를 들어, forEach 함수의 경우 함수 안에 익명의 함수를 넣어서 forEach 문을 동작시킨다.
+
+
+
 ## [타입스크립트](https://velog.io/@taeg92/TypeScript-%EC%8B%9C%EC%9E%91%ED%95%98%EA%B8%B0)
 * 타입스크립트는 자바스크립트에 타입을 부여한 언어
 * 자바스크립트의 확장된 언어라고 볼 수 있다.
