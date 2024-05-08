@@ -67,3 +67,10 @@ console.log(fruits);
 const fruit2 = ['🍈', '🥥'];
 const newFruits = fruits.concat(fruit2);
 console.log(newFruits);
+
+// searching
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('🍒'));    // 인덱스 리턴
+console.log(fruits.indexOf('🍌'));
+console.log(fruits.includes('🍒'));   // includes(): 있는지 없는지 확인후 true/false 반환

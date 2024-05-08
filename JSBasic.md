@@ -360,7 +360,6 @@ console.log(arr2);
   <details>
     <summary>splice()</summary>
 
-    ```
     // splice(시작인덱스, 삭제개수, 추가개수)
     const fruits = ['🍒', '🍑'];
 
@@ -374,7 +373,6 @@ console.log(arr2);
     console.log(fruits);
     fruits.splice(1, 1, '🍌', '🥝');
     console.log(fruits);
-    ```
   </details>
   
   <details>
@@ -382,6 +380,22 @@ console.log(arr2);
 
   ![splice](/img/splice.png)
   </details>
+
+> concat
+```
+const fruit2 = ['🍈', '🥥'];
+const newFruits = fruits.concat(fruit2);
+console.log(newFruits);
+```
+
+> searching
+```
+console.clear();
+console.log(fruits);
+console.log(fruits.indexOf('🍒'));    // 인덱스 리턴
+console.log(fruits.indexOf('🍌'));
+console.log(fruits.includes('🍒'));   // includes(): 있는지 없는지 확인후 true/false 반환
+```
 
 
 ✅ [콜백함수](https://velog.io/@minidoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
