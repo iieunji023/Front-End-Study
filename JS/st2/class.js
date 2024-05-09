@@ -125,3 +125,24 @@ console.log(triangle instanceof Rectangle);
 console.log(triangle instanceof Triangle);
 console.log(triangle instanceof Shape);
 console.log(triangle instanceof Object);
+
+class Counter {
+  constructor() {
+    this.count;
+
+  }
+
+  increase() {
+    this.count++;
+    console.log(this.count);
+
+  }
+}
+
+const colCount = new Counter();   // new 키워드로 객체를 생성하면 constructor를 실행
+colCount.increase();
+colCount.increase();
+colCount.increase();
+
+colCount.abc = true;
+console.log(colCount.abc);
