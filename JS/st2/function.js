@@ -141,9 +141,88 @@ function randomQuiz(answer, printYes, printNo) {
 const printYes = function()  {
   console.log('Yes');
 }
-
 const printNo = function()  {
   console.log('No');
 }
 
 randomQuiz('i love you', printYes, printNo);
+
+// function quiz
+// function calculate(command, a, b)
+// command: add, sub, divide, mul
+
+function calculate(command, a, b) {
+  if(command == 'add') {
+    return a+b;
+  } else if(command == 'sub') {
+    return a-b;
+  } else if(command == 'div') {
+    return a/b;
+  } else if(command == 'mul') {
+    return a*b;
+  }
+}
+console.log(calculate('add', 10, 5));
+
+function calculate1(command, a, b) {
+  switch (command) {
+    case 'add':
+      return a+b;
+      break;
+
+    case 'sub':
+      return a-b;
+      break;
+
+    case 'div':
+      return a/b;
+      break;
+
+    case 'mul':
+      return a*b;
+      break;
+
+    default:
+      throw Error('unknown command!!');
+  }
+}
+let res1 = calculate1('mul', 10, 20);
+console.log(res1) ;
+
+
+console.clear();
+
+// 함수를 입력파라미터로 받을 때는 함수 이름을 전달한다.
+function doSomething(add) {
+  const res3 = add(10, 5);
+  console.log(res3);
+}
+
+function add(a, b) {
+  const sum = a + b;
+  return sum;
+
+}
+
+// doSomething(add(100, 100));
+doSomething(add);
+
+
+// 콜백의 다형성
+function add1(num1, num2) {
+  return num1 + num2;
+
+}
+
+function mul1(num1, num2) {
+  return num1 * num2;
+  
+}
+
+function surprise(callback) {
+  const result = callback(2,3);
+  console.log(result);
+
+}
+
+surprise(mul1);
