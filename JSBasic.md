@@ -511,6 +511,7 @@ hi2('은지');
 
 > innerHTML: HTML, XML에 접근하여 출력
 
+### [innerHTML, innerText, textContent](https://hianna.tistory.com/483)
 
 #### button 이벤트 주기
 1. html 내에서 **onClick** 
@@ -571,8 +572,10 @@ hi2('은지');
   </details>
 
 > 예제: 도형 위로 마우스 포인터 올리기
+<br />
 🚫 getElementById를 getElementsByClassName()으로 바꾸니 오류 발생
 * getElementById와 달리 getElementsByClassName는 중복된 값이 허용되므로 인덱스 번호까지 적어줘야 한다.
+<br />
 [참고](https://velog.io/@lejhn1/JavaScript-getElementsByClassName-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4%EB%84%88)
 
 ```
