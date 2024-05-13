@@ -491,12 +491,16 @@ hi2('은지');
 * style: css
 * collection: 배열 ..
 
+<br>
+
 > HTMLCollection
 * JavaScript가 문서 객체 접근해서 받아오는 리턴 타입(배열)
 
  *  HTML 문서 전체에 적용: document.getElementByTagName(name);
  *  특정 요소 내 적용: element.getElementByTagName(name);
  *  반환값은 태그 이름에 해당하는 모든 요소를 HTMLCollection 객체로 반환
+
+<br>
 
 > HTMLCollection 객체를 반환하는 메서드(DOM 요소에 접근)
 1. getElementByTagName('name'): 태그 이름과 일치하는 모든 요소를 찾아서 HTMLCollection 객체로 반환
@@ -506,12 +510,14 @@ hi2('은지');
 * querySelector(): CSS선택자와 일치하는 첫번째 요소의 객체를 반환 null
 * querySelectorAll(): CSS선택자와 일치하는 모든 요소 객체를 반환
 
+<br>
+
 > textContent
 * 노드의 text에 접근하여 출력
 
 > innerHTML: HTML, XML에 접근하여 출력
 
-### [innerHTML, innerText, textContent](https://hianna.tistory.com/483)
+### [innerHTML vs innerText vs textContent](https://hianna.tistory.com/483)
 
 #### button 이벤트 주기
 1. html 내에서 **onClick** 
