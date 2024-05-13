@@ -477,9 +477,14 @@ hi2('은지');
 * 자바스크립트의 확장된 언어라고 볼 수 있다.
 
 <br>
+
 ## DOM(Document Object Model) 
 <br>
+
 [참고](https://velog.io/@zad1264/DOM-%EC%9D%B4%EB%9E%80-DOM-TREE-DOM-API-DOM-%EC%A0%95%EB%A6%AC)
+
+<br>
+
 * 자바스크립트를 HTML에 적용하기 위해서 HTML의 요소를 문서 객체 형태로 이해하는 것
 
 > DOM API
@@ -507,7 +512,7 @@ hi2('은지');
 > textContent
 * 노드의 text에 접근하여 출력
 
-> button 이벤트 주기
+#### button 이벤트 주기
 1. html 내에서 **onClick** 
   <details>
     <summary>querySelector.html</summary>
