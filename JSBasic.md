@@ -509,21 +509,24 @@ hi2('은지');
 
 > button 이벤트 주기
 1. html 내에서 **onClick** 
-```
-<body>
-  <p id="welcome">환영합니다.</p>
-  <script>
-    const changeColor = (newColor) => {     // 애로우 함수(화살표 함수)
-      // 환영합니다 접근
-      const welc = document.getElementById('welcome');
-      welc.style.color = newColor;
+  <details>
+    <summary>querySelector.html</summary>
 
-    }
-  </script>
-  <button type="button" onclick="changeColor('red');">빨간색</button>
-  <button type="button" onclick="changeColor('blue')">파란색</button>
-</body>
-```
+    <body>
+    <p id="welcome">환영합니다.</p>
+    <script>
+      const changeColor = (newColor) => {     // 애로우 함수(화살표 함수)
+        // 환영합니다 접근
+        const welc = document.getElementById('welcome');
+        welc.style.color = newColor;
+
+      }
+    </script>
+    <button type="button" onclick="changeColor('red');">빨간색</button>
+    <button type="button" onclick="changeColor('blue')">파란색</button>
+  </body>
+  </details>
+
 
 2. JS에서 **addEventListener**
   <details>
