@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ex2.css" />
+</head>
+<body>
+  <div id="wrap">
+    <p>도형 위로 마우스 포인터를 올려놓으세요.</p>
+    <div id="container">
+    </div>
+  </div>
+  
+  <script>
+    const box = document.getElementById("container");
+    box.addEventListener("mouseover", circle);
+    box.addEventListener("mouseout", originBox);
+
+    function circle() {
+      box.style.borderRadius = '50px';
+      box.style.background = 'green';
+
+    }
+
+    function originBox() {
+      box.style.borderRadius = '0px';
+      box.style.background = '';
+    }
+  </script>
+</body>
+</html>

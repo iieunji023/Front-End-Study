@@ -479,7 +479,7 @@ hi2('은지');
 <br>
 
 ## DOM(Document Object Model) 
-[참고1](https://velog.io/@zad1264/DOM-%EC%9D%B4%EB%9E%80-DOM-TREE-DOM-API-DOM-%EC%A0%95%EB%A6%AC)
+[참고1](https://velog.io/@zad1264/DOM-%EC%9D%B4%EB%9E%80-DOM-TREE-DOM-API-DOM-%EC%A0%95%EB%A6%AC) <br>
 [참고2](https://velog.io/@ko9612/JavaScript-DOM)
 
 * 자바스크립트를 HTML에 적용하기 위해서 HTML의 요소를 문서 객체 형태로 이해하는 것
@@ -569,3 +569,43 @@ hi2('은지');
       alert('버튼이 클릭되었습니다.');
     } );
   </details>
+
+> 예제: 도형 위로 마우스 포인터 올리기
+🚫 getElementById를 getElementsByClassName()으로 바꾸니 오류 발생
+* getElementById와 달리 getElementsByClassName는 중복된 값이 허용되므로 인덱스 번호까지 적어줘야 한다.
+[참고](https://velog.io/@lejhn1/JavaScript-getElementsByClassName-%EC%9D%B4%EB%B2%A4%ED%8A%B8%EB%A6%AC%EC%8A%A4%EB%84%88)
+
+```
+const box = document.getElementById("container");
+const box = document.getElementsByClassName("container")[0];
+```
+
+<details>
+    <summary>ex2.html</summary>
+
+    <body>
+      <div id="wrap">
+        <p>도형 위로 마우스 포인터를 올려놓으세요.</p>
+        <div id="container">
+        </div>
+      </div>
+      
+      <script>
+        const box = document.getElementById("container");
+        box.addEventListener("mouseover", circle);
+        box.addEventListener("mouseout", originBox);
+
+        function circle() {
+          box.style.borderRadius = '50px';
+          box.style.background = 'green';
+
+        }
+
+        function originBox() {
+          box.style.borderRadius = '0px';
+          box.style.background = '';
+        }
+      </script>
+    </body>
+</details>
+
