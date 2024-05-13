@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let solution = 55;
+    function checkNum() {
+    try{
+      const num = document.getElementById("number").value;
+      if(num > solution) throw "너무 큼";
+      else if(num < solution) throw "너무 작음";
+
+    }catch(err) {
+      let e = document.getElementById("hint");
+      e.innerHTML = '힌트: ' + err;
+
+    }
+  }
+  </script>
+  <h1>number Guess</h1>
+  <p>1부터 100사이의 숫자를 입력하시오.</p>
+  <input type="text" id="number">
+  <button type="button" onclick="checkNum();">숫자 추측</button>
+  <p id="hint"></p>
+</body>
+</html>

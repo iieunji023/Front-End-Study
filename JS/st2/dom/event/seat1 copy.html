@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let memNum = prompt("입장객은 몇명입니까?") // 10
+    let colNum = prompt("한 줄에 몇명씩 앉습니까?") // 3
+
+    if(memNum % colNum == 0) {
+      rowNum = parseInt(memNum / colNum);
+
+    } else {
+      rowNum = parseInt(memNum / colNum) + 1;
+
+    }
+
+    for (let i = 0; i < rowNum; i++) {
+      for (let j = 1; j <= colNum; j++) {
+        if(memNum < (j + colNum * i)) break;
+        document.write(`${j + colNum * i} `);
+
+      }
+      document.write("<br>");
+
+    }
+  </script>
+</body>
+</html>

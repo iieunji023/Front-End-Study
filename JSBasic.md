@@ -479,11 +479,8 @@ hi2('은지');
 <br>
 
 ## DOM(Document Object Model) 
-<br>
-
-[참고](https://velog.io/@zad1264/DOM-%EC%9D%B4%EB%9E%80-DOM-TREE-DOM-API-DOM-%EC%A0%95%EB%A6%AC)
-
-<br>
+[참고1](https://velog.io/@zad1264/DOM-%EC%9D%B4%EB%9E%80-DOM-TREE-DOM-API-DOM-%EC%A0%95%EB%A6%AC)
+[참고2](https://velog.io/@ko9612/JavaScript-DOM)
 
 * 자바스크립트를 HTML에 적용하기 위해서 HTML의 요소를 문서 객체 형태로 이해하는 것
 
@@ -511,6 +508,9 @@ hi2('은지');
 
 > textContent
 * 노드의 text에 접근하여 출력
+
+> innerHTML: HTML, XML에 접근하여 출력
+
 
 #### button 이벤트 주기
 1. html 내에서 **onClick** 
