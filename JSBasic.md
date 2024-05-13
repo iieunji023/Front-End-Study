@@ -506,3 +506,58 @@ hi2('은지');
 
 > textContent
 * 노드의 text에 접근하여 출력
+
+> button 이벤트 주기
+1. html 내에서 **onClick** 
+```
+<body>
+  <p id="welcome">환영합니다.</p>
+  <script>
+    const changeColor = (newColor) => {     // 애로우 함수(화살표 함수)
+      // 환영합니다 접근
+      const welc = document.getElementById('welcome');
+      welc.style.color = newColor;
+
+    }
+  </script>
+  <button type="button" onclick="changeColor('red');">빨간색</button>
+  <button type="button" onclick="changeColor('blue')">파란색</button>
+</body>
+```
+
+2. JS에서 **addEventListener**
+  <details>
+    <summary>querySelector.html</summary>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+    </head>
+    <body>
+      <!-- 
+        <ul>
+        <li>김밥</li>
+        <li>라면</li>
+        <li>떡볶이</li>
+      </ul>
+      -->
+      <button id="myButton">클릭</button>
+      <script src="querySelector.js"></script>
+    </body>
+    </html>
+  </details>
+
+  <details>
+    <summary>querySelector.js</summary>
+
+    // li 첫번째 요소에 접근
+    // document.querySelector("li").style.backgroundColor = 'red';
+
+    const btn = document.querySelector("#myButton");
+    btn.addEventListener("click", () => {
+      alert('버튼이 클릭되었습니다.');
+    } );
+  </details>
