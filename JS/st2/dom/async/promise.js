@@ -63,7 +63,7 @@ fetchNumber
 */
 
 // Error
-let getHan = () => {
+let getHan = () => {        // 중괄호를 사용하면 return이 필요하다.
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve('🐔');
@@ -71,13 +71,13 @@ let getHan = () => {
   });
 }
 
-let getEgg = (hen) => {
-  return new Promise((resolve, reject) => {
+let getEgg = (hen) =>       //  괄호가 없으면 자동으로 리턴이 된다.
+   new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve('🐥🥚');
+      resolve(`${hen} => 🥚`);
     }, 1000);
   });
-}
+
 
 getHan()
 .then(hen => getEgg(hen))

@@ -656,4 +656,7 @@ const box = document.getElementsByClassName("container")[0];
     * 상태: 대기(pending), 이행(fulfilled), 거부(rejected)
   #### Consumer
     * .then()
+
   3. async await
+  > [promise, async & await](https://velog.io/@hang_kem_0531/Promise%EC%99%80-asyncawait)
+  
