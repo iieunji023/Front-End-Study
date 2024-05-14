@@ -398,7 +398,9 @@ console.log(fruits.includes('🍒'));   // includes(): 있는지 없는지 확�
 ```
 
 
-✅ [콜백함수](https://velog.io/@minidoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
+✅ 콜백함수
+* [참고1](https://velog.io/@minidoo/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98Callback-Function)
+* [참고2](https://inpa.tistory.com/entry/JS-%F0%9F%93%9A-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%BD%9C%EB%B0%B1-%ED%95%A8%EC%88%98)
 * 파라미터로 함수를 전달하는 함수
 * 예를 들어, forEach 함수의 경우 함수 안에 익명의 함수를 넣어서 forEach 문을 동작시킨다.
 
@@ -618,3 +620,32 @@ const box = document.getElementsByClassName("container")[0];
     </body>
 </details>
 
+## AJAX(Asynchronous Javascript And XML)
+* [참고](https://scoring.tistory.com/entry/AJAX%EB%9E%80-JQuery%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-AJAX%EC%82%AC%EC%9A%A9%EB%B2%95)
+* 웹에서 동적으로 데이터를 주고 받는 기술
+* XHR(XMLHttpRequest) 오브젝트
+  * 브라우저에서 제공하는 API -> fetch() API
+  <br>
+  ===> JSON(Javascript Object Notation) data format{key:value}
+  > [stringify, parse](https://sewonzzang.tistory.com/23)
+  1. stringify
+  * object -> json(serialize)
+  * 객체를 JSON으로 바꿔준다.
+  2. parse
+  * json -> object(deserialize)
+  * JSON을 객체로 바꿔준다.
+
+  * abc ---> abc(cba)
+
+  > async
+  1. callback
+  2. promise
+  #### Producer
+    * 콜백함수 대신에 사용하는 비동기 오브젝트
+    * producer와 consumer를 연결해주는 특별한 JS 객체
+    * promise를 사용해서 비동기 실행 함수를 만들고 실행결과가 성공되면 resolve(value)를 호출하여 결과값을 consumer에게 전달한다.
+    * 실패하면 reject(error)를 호출하여 에러를 전달한다.
+    * 상태: 대기(pending), 이행(fulfilled), 거부(rejected)
+  #### Consumer
+    * .then()
+  3. async await
