@@ -629,7 +629,8 @@ const box = document.getElementsByClassName("container")[0];
   <br>
   ===> JSON(Javascript Object Notation) data format{key:value}
   <br>
-  
+  <br>
+
   > [stringify, parse](https://sewonzzang.tistory.com/23)
   1. stringify
   * object -> json(serialize)
@@ -643,6 +644,10 @@ const box = document.getElementsByClassName("container")[0];
   > async
   1. callback
   2. promise
+  > promise란?
+    * 자바스크립트에서 제공하는 비동기를 간편하게 처리할 수 있게 도와주는 객체이다.
+    * promise 이전에 비동기 처리로 콜백 패턴을 주로 사용했으나, 가독성이 나쁘고 에러처리가 까다로운 콜백 지옥의 단점을 보완하기 위해 나온 객체이다.
+    * [promise와 callback 차이](https://spicycookie.me/JavaScript/promise/)
   #### Producer
     * 콜백함수 대신에 사용하는 비동기 오브젝트
     * producer와 consumer를 연결해주는 특별한 JS 객체
