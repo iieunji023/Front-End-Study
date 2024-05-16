@@ -660,3 +660,20 @@ const box = document.getElementsByClassName("container")[0];
   3. async await
   > [promise, async & await](https://velog.io/@hang_kem_0531/Promise%EC%99%80-asyncawait)
   
+> Fetch API: 백엔드와 통신하는 API
+* [JSONPlaceholder](https://jsonplaceholder.typicode.com/guide/)
+* fetch(url, options) return은 promise타입의 객체
+* .then()메서드는 promise를 처리할 수 있는 메서드이다.
+* post 방식의 경우에는 header에 **content-type; charse=utf8**을 필히 작성해야 한다.
+* method: 'post'
+
+## [과제]()
+> 참고자료
+[css:flex](https://www.heropy.dev/p/Ha29GI)
+[css:flex](https://studiomeal.com/archives/197)
+[css:span 중앙정렬](https://iamdaeyun.tistory.com/entry/CSS-display-flex-%EC%88%98%EC%A7%81%EC%A0%95%EB%A0%AC-%EC%A4%91%EC%95%99%EC%A0%95%EB%A0%AC-span%EC%97%90%EB%8F%84-%EB%A8%B9%ED%9E%90%EA%B9%8C-%EB%A8%B9%ED%9E%8C%EB%8B%A4)
+[css:scrollbar](https://inpa.tistory.com/entry/CSS-%F0%9F%8C%9F-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%B0%94Scrollbar-%EA%BE%B8%EB%AF%B8%EA%B8%B0-%EC%86%8D%EC%84%B1-%EC%B4%9D%EC%A0%95%EB%A6%AC)
+[css:hover 효과](https://www.codingfactory.net/12584)
+
+> UI
+![css 화면](/img/ui.png)
