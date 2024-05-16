@@ -668,7 +668,7 @@ const box = document.getElementsByClassName("container")[0];
 * method: 'post'
 
 ## [과제](https://github.com/iieunji023/Front-End-Study/tree/main/JS/shoppingmail)
-> 참고자료
+> css 참고자료
 * [css:flex](https://www.heropy.dev/p/Ha29GI)
 * [css:flex](https://studiomeal.com/archives/197)
 * [css:span 중앙정렬](https://iamdaeyun.tistory.com/entry/CSS-display-flex-%EC%88%98%EC%A7%81%EC%A0%95%EB%A0%AC-%EC%A4%91%EC%95%99%EC%A0%95%EB%A0%AC-span%EC%97%90%EB%8F%84-%EB%A8%B9%ED%9E%90%EA%B9%8C-%EB%A8%B9%ED%9E%8C%EB%8B%A4)
@@ -676,4 +676,34 @@ const box = document.getElementsByClassName("container")[0];
 * [css:hover 효과](https://www.codingfactory.net/12584)
 
 > UI
-* ![css 화면](/img/ui.png)
+<br>
+
+ ![css 화면](/img/ui.png)
+
+> [Fetch 함수로 JSON 파일 읽어오기](https://velog.io/@kimheewon/fetch%ED%95%A8%EC%88%98%EB%A1%9C-Json%ED%8C%8C%EC%9D%BC-%EC%9D%BD%EC%96%B4%EC%98%A4%EA%B8%B0)
+
+1. fetch()란
+* 자바스크립트를 사용하면 필요할 때 **서버에 네트워크 요청**을 보내고 새로운 **정보를 받아오는 일**을 할 수 있다.
+
+2. JSON이란?
+* 일반적으로 서버에서 클라이언트로 **데이터를 보낼 때 사용하는 양식**. 클라이언트가 사용하는 언어에 관계 없이 통일된 데이터를 주고받을 수 있도록, **일정한 패턴을 지닌 문자열**을 생성해 내보내면 클라이언트는 그를 해석해 데이터를 자기만의 방식으로 온전히 저장, 표시할 수 있게 된다.
+
+<details>
+    <summary>Fetch함수를 사용하여 JSON 파일 파싱해오기</summary>
+
+    function loadFile() {
+      return fetch('data/data.json')      // json 파일 읽어오기
+      .then(response => response.json())  // 읽어온 데이터를 json으로 변환
+      .then((json) => {
+        data = json.items;     // json에 있는 items만 받아오기
+
+        let html = '';
+        data.forEach(element => {   // foreach 배열의 개수만큼 반복문을 돌려라
+          console.log(element);     // element에는 하나 하나의 배열이 담아져있음
+        })
+      })
+      .catch(error => console.error('Error fetching JSON', error));
+    }
+
+    loadFile();
+</details>
