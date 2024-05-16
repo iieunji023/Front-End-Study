@@ -667,13 +667,13 @@ const box = document.getElementsByClassName("container")[0];
 * post 방식의 경우에는 header에 **content-type; charse=utf8**을 필히 작성해야 한다.
 * method: 'post'
 
-## [과제]()
+## [과제](https://github.com/iieunji023/Front-End-Study/tree/main/JS/shoppingmail)
 > 참고자료
-[css:flex](https://www.heropy.dev/p/Ha29GI)
-[css:flex](https://studiomeal.com/archives/197)
-[css:span 중앙정렬](https://iamdaeyun.tistory.com/entry/CSS-display-flex-%EC%88%98%EC%A7%81%EC%A0%95%EB%A0%AC-%EC%A4%91%EC%95%99%EC%A0%95%EB%A0%AC-span%EC%97%90%EB%8F%84-%EB%A8%B9%ED%9E%90%EA%B9%8C-%EB%A8%B9%ED%9E%8C%EB%8B%A4)
-[css:scrollbar](https://inpa.tistory.com/entry/CSS-%F0%9F%8C%9F-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%B0%94Scrollbar-%EA%BE%B8%EB%AF%B8%EA%B8%B0-%EC%86%8D%EC%84%B1-%EC%B4%9D%EC%A0%95%EB%A6%AC)
-[css:hover 효과](https://www.codingfactory.net/12584)
+* [css:flex](https://www.heropy.dev/p/Ha29GI)
+* [css:flex](https://studiomeal.com/archives/197)
+* [css:span 중앙정렬](https://iamdaeyun.tistory.com/entry/CSS-display-flex-%EC%88%98%EC%A7%81%EC%A0%95%EB%A0%AC-%EC%A4%91%EC%95%99%EC%A0%95%EB%A0%AC-span%EC%97%90%EB%8F%84-%EB%A8%B9%ED%9E%90%EA%B9%8C-%EB%A8%B9%ED%9E%8C%EB%8B%A4)
+* [css:scrollbar](https://inpa.tistory.com/entry/CSS-%F0%9F%8C%9F-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EB%B0%94Scrollbar-%EA%BE%B8%EB%AF%B8%EA%B8%B0-%EC%86%8D%EC%84%B1-%EC%B4%9D%EC%A0%95%EB%A6%AC)
+* [css:hover 효과](https://www.codingfactory.net/12584)
 
 > UI
-![css 화면](/img/ui.png)
+* ![css 화면](/img/ui.png)
